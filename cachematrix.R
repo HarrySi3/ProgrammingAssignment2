@@ -9,8 +9,8 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x
-  setInverse <- function(inverse) m <<- inverse
-  getInverse <- function() m
+  setInverse <- function(inverse) m <<- inverse ## This function sets the matrix object in a separate environment.
+  getInverse <- function() m ## This funcion gets the matrix object stored in the separate environment.
   list(set = set, get = get,
        setInverse = setInverse,
        getInverse = getInverse)
