@@ -1,9 +1,6 @@
 ## makeCacheMatrix is a function that is a contains a sets and gets the value of matrix object that 
 ## is stored in a cache in a separate environment
 ##
-## Tested using the following matrix: 
-## mb <-makeCacheMatrix(matrix(c(1,2,2,1),nrow=2,ncol=2)) 
-## cacheSolve(mb)
 
 makeCacheMatrix <- function(x = matrix()) { 
   m <- NULL
@@ -34,4 +31,3 @@ cacheSolve <- function(x, ...) {
   x$setInverse(m) 
   m
 }
-
